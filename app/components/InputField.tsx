@@ -3,7 +3,7 @@ import React from 'react'
 const InputField = () => {
   return (
     <div>
-        <label>Yearly Salary: <input name='Salary'/></label>
+        <label><input type="text" placeholder="Yearly Salary" name='Salary'/></label>
     </div>
   )
 }

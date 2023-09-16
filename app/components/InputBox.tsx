@@ -1,5 +1,5 @@
 import React from 'react'
-import Calculate from './Calculate'
+import Calculate from './CalculateButton'
 import styles from './InputBox.module.css'
 import InputField from './InputField'
 

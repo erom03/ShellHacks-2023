@@ -9,10 +9,10 @@ const InputField = () => {
             <input
             type="number"
             placeholder="Enter Yearly Salary"
-            className="rounded-md p-3"/>
+            className="rounded-md p-3"
             value={salary}
             required
-            onChange={(e) => SetSalary(e.target.value)}
+            onChange={(e) => SetSalary(e.target.value)}/>
             </label>
     </div>
   )

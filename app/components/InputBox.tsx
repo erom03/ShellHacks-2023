@@ -5,7 +5,7 @@ import InputField from './InputField'
 const InputBox = () => {
 
   return (
-    <div className="bg-sky-500 p-5 text-black font-bold shadow-xl">
+    <div className="bg-sky-500 p-5 text-black font-normal shadow-xl">
       <form>
         <InputField />
         <Calculate />

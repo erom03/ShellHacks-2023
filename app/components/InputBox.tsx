@@ -1,13 +1,32 @@
-import React from 'react'
+"use client";
+import React, { useState } from 'react';
 import Calculate from './CalculateButton'
-import InputField from './InputField'
 
 const InputBox = () => {
+  
+  const [salary, SetSalary] = useState("");   // Need salary
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const blog = { salary };  // Not working need salary from InputField
 
+    console.log(blog);
+  }
+  
   return (
     <div className="bg-sky-500 p-5 text-black font-bold shadow-xl">
-      <form>
-        <InputField />
+      <form onSubmit={handleSubmit}>
+
+      <div>
+        <label>
+            <input
+            type="number"
+            placeholder="Enter Yearly Salary"
+            className="rounded-md p-3"
+            value={salary}
+            required
+            onChange={(e) => SetSalary(e.target.value)}/>
+            </label>
+      </div>
         <Calculate />
       </form>
     </div>

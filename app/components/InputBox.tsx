@@ -6,10 +6,13 @@ import InputField from './InputField'
 styles.inputBoxContainer
 
 const InputBox = () => {
+
   return (
     <div className={styles.inputBoxContainer}>
+      <form>
         <InputField />
         <Calculate />
+      </form>
     </div>
   )
 }

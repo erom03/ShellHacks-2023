@@ -1,9 +1,16 @@
-import React from 'react'
+"use client";
+import React, { useState } from 'react'
 
 const InputField = () => {
+    const [salary, SetSalary] = useState("");
   return (
     <div>
-        <label>Yearly Salary: <input name='Salary'/></label>
+        <label>Yearly Salary:
+            <input
+            type="number"
+            value={salary}
+            required
+            onChange={(e) => SetSalary(e.target.value)}/></label>
     </div>
   )
 }

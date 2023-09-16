@@ -1,14 +1,11 @@
 import React from 'react'
 import Calculate from './CalculateButton'
-import styles from './InputBox.module.css'
 import InputField from './InputField'
-
-styles.inputBoxContainer
 
 const InputBox = () => {
 
   return (
-    <div className={styles.inputBoxContainer}>
+    <div className="bg-sky-500 p-5 text-black font-bold shadow-xl">
       <form>
         <InputField />
         <Calculate />

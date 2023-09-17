@@ -1,6 +1,5 @@
 import React from 'react'
 
-// Don't worry about this error assumes type is any (it's bool)
 interface ICalculateProps {
   IsPending: boolean;
 }

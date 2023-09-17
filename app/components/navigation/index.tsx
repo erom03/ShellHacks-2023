@@ -10,6 +10,7 @@ const Navbar = () => {
           <div className="flex justify-between items-center h-full">
             <Logo />
             <ul className="hidden md:flex gap-x-6 text-white">
+            <h1>How Much Car</h1> 
             <li>
                 <Link href="/">
                   <p>Home</p>
@@ -17,7 +18,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link href="/about">
-                  <p>About Us</p>
+                  <p>About</p>
                 </Link>
               </li>
               <li>

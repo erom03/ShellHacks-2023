@@ -10,33 +10,21 @@ const InputBox = () => {
   const [ValueEntered, setValueEntered] = useState(false);
   const [MonthlyPayment, SetMonthlyPayment] = useState(0);
 
+  var monthlyBudget;
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const info = { salary };  // Makes salary into JSON blog
-    setIsPending(true); 
+    setIsPending(true);
 
-    // Enriques part
-    var monthlyBudget = Math.floor(parseInt(salary)/12*.1);
-    console.log(monthlyBudget);
-    // until here
-
-    fetch('/api/storeJSONData', {         // set api to server link
-      method: 'POST',
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(info)
-    }).then(res => {
-      console.log('new info added');
-      setIsPending(false);
-      return res.json();
-    })
-    .then(data => {
-      console.log(data);
-      setValueEntered(true);
-      SetMonthlyPayment((parseInt(salary)/12)*.1);
-    })
+    monthlyBudget = Math.floor(parseInt(salary)/12*.1);
+    setValueEntered(true);
+    SetMonthlyPayment(monthlyBudget);
+    setIsPending(false);
   }
   
   return (
+    <>
     <div className="inputBoxContainer">
       <form onSubmit={handleSubmit}>
         <label>
@@ -52,6 +40,10 @@ const InputBox = () => {
         <AffordAbleAmount IsValueEntered={ValueEntered} MonthlyPayment={MonthlyPayment}/>
       </form>
     </div>
+      {ValueEntered && <section>
+        <label>Testing</label>
+      </section>}
+    </>
   )
 }
 

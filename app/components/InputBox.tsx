@@ -1,8 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import Calculate from './CalculateButton'
-import './InputBox.css'
-import AffordAbleAmount from './navigation/Calculation';
+import AffordAbleAmount from './Calculation';
 
 const InputBox = () => {
   
@@ -14,9 +13,12 @@ const InputBox = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const info = { salary };  // Makes salary into JSON blog
-    setIsPending(true);
+    setIsPending(true); 
 
-    fetch('http://localhost:8000/info', {
+    var monthlyBudget = Math.floor(parseInt(salary)/12*.1);
+    console.log(monthlyBudget);
+    
+    fetch('/api/storeJSONData', {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(info)
@@ -33,22 +35,19 @@ const InputBox = () => {
   }
   
   return (
-    <div className="bg-sky-500 p-5 text-black font-normal shadow-xl rounded-md inputBoxContainer w-3/5">
+    <div className="inputBoxContainer">
       <form onSubmit={handleSubmit}>
-
-
         <label>
             <input
             type="number"
             placeholder="Enter Yearly Salary"
-            className="rounded-md p-3"
+            className="InputBox"
             required
             value={salary}
             onChange={(e) => SetSalary(e.target.value)}/>
         </label>
-        <AffordAbleAmount IsValueEntered={ValueEntered} MonthlyPayment={MonthlyPayment}/>
         <Calculate IsPending={isPending}/>
-
+        <AffordAbleAmount IsValueEntered={ValueEntered} MonthlyPayment={MonthlyPayment}/>
       </form>
     </div>
   )

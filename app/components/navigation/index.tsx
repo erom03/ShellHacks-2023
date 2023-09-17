@@ -5,12 +5,11 @@ import Logo from "./Logo";
 const Navbar = () => {
   return (
     <>
-      <div className="w-full h-20 bg-sky-500 sticky top-0 shadow-md">
-        <div className="container mx-auto px-4 h-full">
+      <div className="sticky shadow-md NavBar">
+        <div className="container mx-auto px-1vw h-full">
           <div className="flex justify-between items-center h-full">
             <Logo />
             <ul className="hidden md:flex gap-x-6 text-white">
-            <h1>How Much Car</h1> 
             <li>
                 <Link href="/">
                   <p>Home</p>

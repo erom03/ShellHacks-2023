@@ -32,8 +32,8 @@ const page = () => {
         </label>
         <div>
           <Image
-          src="/images/Papers.jpg"
-          alt="Papers"
+          src="/images/eriromToken.jpg"
+          alt="Enrique"
           width={100}
           height={100}
         /></div>
@@ -75,7 +75,7 @@ const page = () => {
         </label>
         <div>
           <Image
-          src="/images/diegoAngueiraToken.png"
+          src="/images/diegoAngueiraTokenRed.png"
           alt="Papers"
           width={100}
           height={100}

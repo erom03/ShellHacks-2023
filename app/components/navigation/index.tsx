@@ -7,7 +7,7 @@ const Navbar = () => {
     <>
       <div className="sticky shadow-md NavBar">
         <div className="container mx-auto px-1vw h-full">
-          <div className="flex justify-between items-center h-full">
+          <div className="flex justify-between items-center h-full ml-5 mr-10">
             <Logo />
             <ul className="hidden md:flex gap-x-6 text-white">
             <li>

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .bgHolder {
-  margin: 50px 0;
+  margin: -50px 0;
   background-image: url('../public/images/CarBackground.jpg');
   background-size: 100%;
   background-position: center;

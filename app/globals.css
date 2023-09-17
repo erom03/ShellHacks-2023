@@ -6,6 +6,16 @@
   overflow: hidden;
 }
 
+a:hover {
+  color: rgb(100, 100, 100);
+  transition: 0.5s;
+}
+
+a:active {
+  color: rgb(59, 59, 59);
+  transition: 0.2s;
+}
+
 .NavBar {
   width: 100vw;
   height: 10vh;
@@ -29,7 +39,7 @@
 }
 
 .bgHolder > div {
-  grid-row: 5;
+  grid-row: 3;
   grid-column: 3;
 }
 

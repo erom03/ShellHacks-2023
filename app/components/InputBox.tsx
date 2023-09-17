@@ -21,6 +21,7 @@ const InputBox = () => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(info)
     }).then(res => {
+      fetchData;
       console.log('new info added');
       setIsPending(false);
       return res.json();
@@ -31,12 +32,16 @@ const InputBox = () => {
       SetMonthlyPayment((parseInt(salary)/12)*.1);
     })
   }
+
+  const fetchData = async () => {
+    const response = await fetch('/api/storeJSONData')
+    const data = await response.json();
+    console.log(data);
+  }
   
   return (
     <div className="bg-sky-500 p-5 text-black font-normal shadow-xl rounded-md inputBoxContainer w-3/5">
       <form onSubmit={handleSubmit}>
-
-
         <label>
             <input
             type="number"

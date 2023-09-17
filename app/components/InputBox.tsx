@@ -15,7 +15,7 @@ const InputBox = () => {
     const info = { salary };  // Makes salary into JSON blog
     setIsPending(true);
 
-    fetch('http://localhost:8000/info', {
+    fetch('/api/storeJSONData', {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(info)

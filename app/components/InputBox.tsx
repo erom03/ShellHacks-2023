@@ -30,12 +30,6 @@ const InputBox = () => {
       SetMonthlyPayment((parseInt(salary)/12)*.1);
     })
   }
-
-  const fetchData = async () => {
-    const response = await fetch('/api/storeJSONData')
-    const data = await response.json();
-    console.log(data);
-  }
   
   return (
     <div className="inputBoxContainer">
@@ -51,10 +45,7 @@ const InputBox = () => {
         </label>
         <Calculate IsPending={isPending}/>
         <AffordAbleAmount IsValueEntered={ValueEntered} MonthlyPayment={MonthlyPayment}/>
-
       </form>
-
-      <button onClick={fetchData}>Fetch</button>
     </div>
   )
 }

@@ -5,12 +5,21 @@ import styles from './InputBox.module.css'
 
 const InputBox = () => {
   
-  const [salary, SetSalary] = useState("");
+  const [salary, SetSalary] = useState("");   // Need salary
+  const [isPending, setIsPending] = useState(false);
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const blog = { salary };
+    const info = { salary };  // Makes salary into JSON blog
+    setIsPending(true);
 
-    console.log(blog);
+    fetch('http://localhost:3000/', {
+      method: 'POST',
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(info)
+    }).then(() => {
+      console.log('new info added');
+      setIsPending(false);
+    })
   }
   
   return (
@@ -28,7 +37,7 @@ const InputBox = () => {
             onChange={(e) => SetSalary(e.target.value)}/>
             </label>
       </div>
-        <Calculate />
+        <Calculate IsPending={isPending}/>
       </form>
     </div>
   )

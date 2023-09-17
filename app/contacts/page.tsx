@@ -75,7 +75,7 @@ const page = () => {
         </label>
         <div>
           <Image
-          src="/images/Papers.jpg"
+          src="/images/diegoAngueiraToken.png"
           alt="Papers"
           width={100}
           height={100}

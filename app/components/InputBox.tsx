@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Calculate from './CalculateButton'
 import styles from './InputBox.module.css'
+import { data } from 'autoprefixer';
 
 const InputBox = () => {
   
@@ -12,13 +13,18 @@ const InputBox = () => {
     const info = { salary };  // Makes salary into JSON blog
     setIsPending(true);
 
-    fetch('http://localhost:3000/', {
+    fetch('http://localhost:8000/info', {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(info)
-    }).then(() => {
+    }).then(res => {
       console.log('new info added');
       setIsPending(false);
+      return res.json();
+    })
+    .then(data => {
+      console.log(data);
+      SetSalary(data);
     })
   }
   

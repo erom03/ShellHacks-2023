@@ -1,7 +1,8 @@
 "use client";
 import React, { useState } from 'react';
 import Calculate from './CalculateButton'
-import styles from './InputBox.module.css'
+import './InputBox.css'
+
 import { data } from 'autoprefixer';
 
 const InputBox = () => {

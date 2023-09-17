@@ -1,8 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import Calculate from './CalculateButton'
-import './InputBox.css'
-import AffordAbleAmount from './navigation/Calculation';
+import AffordAbleAmount from './Calculation';
 
 const InputBox = () => {
   
@@ -33,7 +32,7 @@ const InputBox = () => {
   }
   
   return (
-    <div className="bg-sky-500 p-5 text-black font-normal shadow-xl rounded-md inputBoxContainer w-3/5">
+    <div className="inputBoxContainer">
       <form onSubmit={handleSubmit}>
 
 
@@ -41,13 +40,13 @@ const InputBox = () => {
             <input
             type="number"
             placeholder="Enter Yearly Salary"
-            className="rounded-md p-3"
+            className="InputBox"
             required
             value={salary}
             onChange={(e) => SetSalary(e.target.value)}/>
         </label>
-        <AffordAbleAmount IsValueEntered={ValueEntered} MonthlyPayment={MonthlyPayment}/>
         <Calculate IsPending={isPending}/>
+        <AffordAbleAmount IsValueEntered={ValueEntered} MonthlyPayment={MonthlyPayment}/>
 
       </form>
     </div>

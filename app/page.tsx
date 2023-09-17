@@ -5,8 +5,8 @@ export default function Home() {
     <>
     <main className="bgHolder">
       <div className="container mx-auto px-4">
-        <div className="w-full h-screen"></div>
         <InputBox />
+        <div className="w-full h-screen"></div>
       </div>
     </main>
     </>

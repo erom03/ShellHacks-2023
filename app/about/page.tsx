@@ -19,8 +19,6 @@ const page = () => {
         
 
     
-    <br/>
-    <br/>
     <div className="bg-white p-5 text-black font-normal shadow-xl rounded-md personOne w-5/3 mx-5 my-0 text-wrap">
         <label>
         20% Down Payment: Start by saving up at least 20% of the car&apos;s total cost for a down payment. This 

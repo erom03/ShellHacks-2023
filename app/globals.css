@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  overflow: hidden;
+}
+
 .bgHolder {
-  margin: 50px 0;
+  margin-top: -55px;
+  margin-bottom: -100px;
   background-image: url('../public/images/CarBackground.jpg');
   background-size: 100%;
   background-position: center;

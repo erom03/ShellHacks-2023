@@ -13,7 +13,12 @@ const InputBox = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const info = { salary };  // Makes salary into JSON blog
-    setIsPending(true);
+    setIsPending(true); 
+
+    // Enriques part
+    var monthlyBudget = Math.floor(parseInt(salary)/12*.1);
+    console.log(monthlyBudget);
+    // until here
 
     fetch('/api/storeJSONData', {         // set api to server link
       method: 'POST',

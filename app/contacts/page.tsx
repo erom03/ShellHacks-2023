@@ -51,13 +51,13 @@ const page = () => {
         <label>
         Backend Developer
         </label>
-        <div>
+       <center><div>
           <Image
-          src="/images/Papers.jpg"
+          src="/images/NickAzzi.png"
           alt="Papers"
           width={100}
           height={100}
-        /></div>
+        /></div></center> 
         <div>
         Nick Azzi
         </div>
@@ -94,13 +94,13 @@ const page = () => {
         <label>
         Data Engineer/Project Manager
         </label>
-        <div>
+        <center><div>
           <Image
-          src="/images/Papers.jpg"
+          src="/images/Danny.png"
           alt="Papers"
           width={100}
           height={100}
-        /></div>
+        /></div></center> 
         <div>
         Daniel Roque
         </div>

@@ -7,7 +7,7 @@ interface ICalculateProps {
 const Calculate = ({IsPending}: ICalculateProps) => {
   return (
     <div className="EnterButton">
-        { !IsPending && <button onClick={() => console.log('working')} className="bg-yellow-400 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-md inline-block">
+        { !IsPending && <button className="bg-yellow-400 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-md inline-block">
           Calculate</button>}
         { IsPending && <button disabled className="bg-yellow-400 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-md inline-block">
           Loading...</button>}

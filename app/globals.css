@@ -38,14 +38,21 @@ a:active {
   grid-template-columns: repeat(5, 1fr);
 }
 
-.bgHolder > div {
+.bgHolder > .inputBoxContainer {
+  grid-row: 2;
+  grid-column: 3;
+}
+
+.bgHolder > section {
+  background-color: rgb(14, 165, 233);
+  height: 30vh;
+  width: 325px;
   grid-row: 3;
   grid-column: 3;
 }
 
 .inputBoxContainer {
   background-color: rgb(14, 165, 233);
-  position: relative;
   padding: 2vw;
   height: 30vh;
   width: 325px;

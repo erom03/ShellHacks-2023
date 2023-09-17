@@ -8,9 +8,7 @@ export default function Home() {
     <section>
       <header><Navigation /></header>
       <main className="bgHolder">
-        <div>
           <InputBox />
-        </div>
       </main>
     </section>
   );

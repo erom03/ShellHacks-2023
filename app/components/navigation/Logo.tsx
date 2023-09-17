@@ -34,20 +34,22 @@ const Logo = () => {
 
   return (
     <>
-      <Link href="/" style={{ display: showButton ? "none" : "block" }}>
+      <div className="flex justify-start items-center gap-x-6 text-white">
         <Image
           src="/images/LogoWhite.png"
           alt="Logo"
+          title="How Much Car"
           width={50}
           height={50}
           className="relative"
-        />
-      </Link>
+          /> How Much Car
+      </div>
+
       <div
         style={{
           display: showButton ? "block" : "none",
         }}
-      >
+        >
       </div>
     </>
   );

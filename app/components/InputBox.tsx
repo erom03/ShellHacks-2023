@@ -13,8 +13,8 @@ const InputBox = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const info = { salary };  // Makes salary into JSON blog
-    setIsPending(true);
-
+    setIsPending(true); 
+    
     fetch('/api/storeJSONData', {
       method: 'POST',
       headers: { "Content-Type": "application/json" },

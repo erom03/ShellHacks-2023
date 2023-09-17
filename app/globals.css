@@ -6,6 +6,13 @@
   overflow: hidden;
 }
 
+.NavBar {
+  width: 100vw;
+  height: 10vh;
+  background-color: rgb(14, 165, 233);
+  padding-bottom: 1vh;
+}
+
 .bgHolder {
   position: inherit;
   margin-top: -2vh;

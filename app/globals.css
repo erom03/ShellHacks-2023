@@ -46,7 +46,7 @@ a:active {
 .bgHolder > section {
   background-color: rgb(14, 165, 233);
   height: 30vh; 
-  width: 325px;
+  width: 330px;
   grid-row: 3;
   grid-column: 3;
 }
@@ -55,7 +55,7 @@ a:active {
   background-color: rgb(14, 165, 233);
   padding: 2vw;
   height: 30vh;
-  width: 325px;
+  width: 330px;
   border-radius: 6px;
   display: flex;
   justify-content: center;

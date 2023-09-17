@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Calculate from './CalculateButton'
 import AffordAbleAmount from './Calculation';
+import data from '../../json/Cars.json'
 
 const InputBox = () => {
   
@@ -40,8 +41,10 @@ const InputBox = () => {
         <AffordAbleAmount IsValueEntered={ValueEntered} MonthlyPayment={MonthlyPayment}/>
       </form>
     </div>
-      {ValueEntered && <section>
+      {MonthlyPayment > 172 && <section>
         <label>Testing</label>
+        <select>
+        </select>
       </section>}
     </>
   )

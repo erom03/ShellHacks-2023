@@ -34,3 +34,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 tsconfig.json
+
+# Ignore client changes to config
+# to continue building locally
+next.config.js

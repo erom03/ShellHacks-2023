@@ -7,9 +7,8 @@ export default function Home() {
     <>
     <header><Navigation /></header>
     <main className="bgHolder">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 h-screen">
         <InputBox />
-        <div className="w-full h-screen"></div>
       </div>
     </main>
     </>

@@ -7,22 +7,18 @@ import Image from "next/image";
 const page = () => {
   return (
     
+    <main className="bg-[url('/images/Rallying2.jpg')] bg-center bg-cover h-full">
     <>
     <header><Navigation /></header>
-    <main>
         <div>
         
             <center><h1 className= "text-xl bg-yellow-400 text-white py-2 px-4 rounded-md inline-block">The 20/4/10 Rule </h1></center>
-        <Image
-          src="/images/Papers.jpg"
-          alt="Papers"
-          width={100}
-          height={100}
-        />
+
         
 
     
-    
+    <br/>
+    <br/>
     <div className="bg-sky-500 p-5 text-white font-normal shadow-xl rounded-md personOne w-5/3 mx-5 my-5 text-wrap">
         <label>
         20% Down Payment: Start by saving up at least 20% of the car's total cost for a down payment. This 
@@ -54,8 +50,8 @@ const page = () => {
     </div>
     
         </div>
-    </main>
     </>
+    </main>
   )
 }
 

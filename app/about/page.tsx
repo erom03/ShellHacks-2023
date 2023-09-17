@@ -14,7 +14,7 @@ const page = () => {
     <div className="flex items h-screen bg-gradient-to-r from-cyan-500 to-blue-500">
         <div>
         
-            <center><h1 className= "text-xl bg-yellow-400 text-white my-10 py-2 px-4 rounded-md inline-block">The 20/4/10 Rule </h1></center>
+            <center><h1 className= "text-xl bg-yellow-400 text-white my-10 py-2 px-4 rounded-md inline-block">The 20/10/4 Rule </h1></center>
 
         
 

@@ -21,7 +21,6 @@ const InputBox = () => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(info)
     }).then(res => {
-      fetchData;
       console.log('new info added');
       setIsPending(false);
       return res.json();
@@ -55,6 +54,8 @@ const InputBox = () => {
         <Calculate IsPending={isPending}/>
 
       </form>
+
+      <button onClick={fetchData}>Fetch</button>
     </div>
   )
 }

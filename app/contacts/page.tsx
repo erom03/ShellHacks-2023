@@ -26,17 +26,17 @@ const page = () => {
 
     <div className="flex items h-screen bg-gradient-to-r from-cyan-500 to-blue-500">
 
-    <div className="w-96 h-72 bg-white px-5 py-10 mx-5 my-10 leading-10 text-black text-center align-middle font-normal shadow-xl rounded-md person">
+    <div className="w-96 h-80 bg-white px-5 py-10 mx-5 my-10 leading-10 text-black text-center align-middle font-normal shadow-xl rounded-md person">
         <label>
         Project Lead
         </label>
-        <div>
+        <center>
           <Image
-          src="/images/Papers.jpg"
-          alt="Papers"
+          src="/images/eriromToken.png"
+          alt="Enrique"
           width={100}
           height={100}
-        /></div>
+        /></center>
         <div>
         Enrique Romero
         </div>
@@ -47,17 +47,17 @@ const page = () => {
         </div>
     </div>
 
-    <div className="w-96 h-72 bg-white px-5 py-10 mx-5 my-10 leading-10 text-black text-center align-middle font-normal shadow-xl rounded-md person">
+    <div className="w-96 h-80 bg-white px-5 py-10 mx-5 my-10 leading-10 text-black text-center align-middle font-normal shadow-xl rounded-md person">
         <label>
         Backend Developer
         </label>
-        <div>
+       <center><div>
           <Image
-          src="/images/Papers.jpg"
+          src="/images/NickAzzi.png"
           alt="Papers"
           width={100}
           height={100}
-        /></div>
+        /></div></center> 
         <div>
         Nick Azzi
         </div>
@@ -68,18 +68,18 @@ const page = () => {
         </div>
     </div>
 
-    <div className="w-96 h-72 bg-white px-5 py-10 mx-5 my-10 leading-10 text-black text-center align-middle font-normal shadow-xl rounded-md person">
+    <div className="w-96 h-80 bg-white px-5 py-10 mx-5 my-10 leading-10 text-black text-center align-middle font-normal shadow-xl rounded-md person">
         
         <label>
         Front-End Developer
         </label>
-        <div>
+        <center>
           <Image
-          src="/images/Papers.jpg"
+          src="/images/diegoAngueiraTokenRed.png"
           alt="Papers"
           width={100}
           height={100}
-        /></div>
+        /></center>
         <div>
         Diego Angueira
         </div>
@@ -90,17 +90,17 @@ const page = () => {
         </div>
     </div>
 
-    <div className="w-96 h-72 bg-white px-5 py-10 mx-5 my-10 leading-10 text-black text-center align-middle font-normal shadow-xl rounded-md person">
+    <div className="w-96 h-80 bg-white px-5 py-10 mx-5 my-10 leading-10 text-black text-center align-middle font-normal shadow-xl rounded-md person">
         <label>
         Data Engineer/Project Manager
         </label>
-        <div>
+        <center><div>
           <Image
-          src="/images/Papers.jpg"
+          src="/images/Danny.png"
           alt="Papers"
           width={100}
           height={100}
-        /></div>
+        /></div></center> 
         <div>
         Daniel Roque
         </div>

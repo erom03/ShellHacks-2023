@@ -14,6 +14,9 @@ const InputBox = () => {
     e.preventDefault();
     const info = { salary };  // Makes salary into JSON blog
     setIsPending(true); 
+
+    var monthlyBudget = Math.floor(parseInt(salary)/12*.1);
+    console.log(monthlyBudget);
     
     fetch('/api/storeJSONData', {
       method: 'POST',

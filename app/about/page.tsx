@@ -7,7 +7,7 @@ import Image from "next/image";
 const page = () => {
   return (
     
-    <main className="bg-[url('/images/Rallying2.jpg')] bg-center bg-cover h-full">
+    <main>
     <>
     <header><Navigation /></header>
         <div>

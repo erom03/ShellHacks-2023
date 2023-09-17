@@ -11,10 +11,10 @@ const page = () => {
     <header><Navigation /></header>
     <main>
         <div>
-
-            <center><h1>The 20/4/10 Rule</h1></center>
+        
+            <center><h1 className= "text-xl">The 20/4/10 Rule </h1></center>
         <Image
-          src="/public/images/Papers.jpg"
+          src="/images/Papers.jpg"
           alt="Papers"
           width={100}
           height={100}

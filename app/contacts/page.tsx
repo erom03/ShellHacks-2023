@@ -30,7 +30,13 @@ const page = () => {
         <label>
         Project Lead
         </label>
-        <div>-</div>
+        <div>
+          <Image
+          src="/images/Papers.jpg"
+          alt="Papers"
+          width={100}
+          height={100}
+        /></div>
         <div>
         Enrique Romero
         </div>
@@ -67,7 +73,13 @@ const page = () => {
         <label>
         Front-End Developer
         </label>
-        <div>-</div>
+        <div>
+          <Image
+          src="/images/Papers.jpg"
+          alt="Papers"
+          width={100}
+          height={100}
+        /></div>
         <div>
         Diego Angueira
         </div>
@@ -82,7 +94,13 @@ const page = () => {
         <label>
         Data Engineer/Project Manager
         </label>
-        <div>-</div>
+        <div>
+          <Image
+          src="/images/Papers.jpg"
+          alt="Papers"
+          width={100}
+          height={100}
+        /></div>
         <div>
         Daniel Roque
         </div>

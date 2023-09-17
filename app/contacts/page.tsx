@@ -2,6 +2,8 @@ import React from 'react'
 import Navigation from '../components/navigation'
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
+import Image from "next/image";
+
 
 
 const page = () => {
@@ -43,7 +45,13 @@ const page = () => {
         <label>
         Backend Developer
         </label>
-        <div>-</div>
+        <div>
+          <Image
+          src="/images/Papers.jpg"
+          alt="Papers"
+          width={100}
+          height={100}
+        /></div>
         <div>
         Nick Azzi
         </div>

@@ -12,7 +12,7 @@ const page = () => {
     <main>
         <div>
         
-            <center><h1 className= "text-xl">The 20/4/10 Rule </h1></center>
+            <center><h1 className= "text-xl bg-yellow-400 text-white py-2 px-4 rounded-md inline-block">The 20/4/10 Rule </h1></center>
         <Image
           src="/images/Papers.jpg"
           alt="Papers"

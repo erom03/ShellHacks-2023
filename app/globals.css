@@ -39,16 +39,19 @@ a:active {
 }
 
 .bgHolder > .inputBoxContainer {
-  grid-row: 2;
+  grid-row: 3;
   grid-column: 3;
 }
 
 .bgHolder > section {
   background-color: rgb(14, 165, 233);
-  height: 30vh; 
+  max-height: 50vh;
+  padding-bottom: 1vh;
   width: 330px;
-  grid-row: 3;
+  grid-row: 4;
   grid-column: 3;
+  text-align: center;
+  color: white;
 }
 
 .inputBoxContainer {

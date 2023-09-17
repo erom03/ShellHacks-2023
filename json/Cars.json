@@ -1,6 +1,6 @@
 { "cars":
     [
-        {"trucks": 
+        {"category" :
             [
                 {
                     "make":"Chevorlet",
@@ -37,8 +37,7 @@
 
             ]
         },
-
-        {"sedans":
+        {"category" :
             [
                 {
                     "make":"Honda",
@@ -72,7 +71,7 @@
                 }
             ]
         },
-        {"suvs":
+        {"category" :
             [
                 {
                     "make":"Mazda",

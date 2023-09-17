@@ -41,11 +41,24 @@ const InputBox = () => {
         <AffordAbleAmount IsValueEntered={ValueEntered} MonthlyPayment={MonthlyPayment}/>
       </form>
     </div>
-      {/*{MonthlyPayment > 172 && <section>
-        <label>Testing</label>
-        <select>
-        </select>
-      </section>}*/}
+      {MonthlyPayment > 172 && <section>
+        
+        <div>
+        <label>Recommended Cars:</label>
+          {
+            data.cars.map ((cars, i) => (
+                <div key={i}>
+                  {cars.category && cars.category.map((carss, j) => (
+                    <div key={j}>
+                      {!(MonthlyPayment < carss.monthlyPrice)
+                      && <label>{carss.make} {carss.model} ${carss.price}</label>}
+                    </div>
+                  ))}
+                </div>
+            ))
+          }
+        </div>
+      </section>}
     </>
   )
 }

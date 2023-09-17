@@ -15,7 +15,7 @@ const InputBox = () => {
     const info = { salary };  // Makes salary into JSON blog
     setIsPending(true);
 
-    fetch('http://localhost:8000/info', {
+    fetch('/api/storeJSONData', {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(info)
@@ -29,12 +29,6 @@ const InputBox = () => {
       setValueEntered(true);
       SetMonthlyPayment((parseInt(salary)/12)*.1);
     })
-  }
-
-  const fetchData = async () => {
-    const response = await fetch('/api/storeJSONData')
-    const data = await response.json();
-    console.log(data);
   }
   
   return (
@@ -51,10 +45,7 @@ const InputBox = () => {
         </label>
         <Calculate IsPending={isPending}/>
         <AffordAbleAmount IsValueEntered={ValueEntered} MonthlyPayment={MonthlyPayment}/>
-
       </form>
-
-      <button onClick={fetchData}>Fetch</button>
     </div>
   )
 }

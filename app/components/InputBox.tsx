@@ -23,7 +23,7 @@ const InputBox = () => {
   }
   
   return (
-    <div className="bg-sky-500 p-5 text-black font-normal shadow-xl rounded-md inputBoxContainer">
+    <div className="bg-sky-500 p-5 text-black font-normal shadow-xl rounded-md inputBoxContainer w-3/5">
       <form onSubmit={handleSubmit}>
 
       <div>

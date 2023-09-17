@@ -15,7 +15,7 @@ const InputBox = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const info = { salary };  // Makes salary into JSON blog
-    setIsPending(true); 
+    setIsPending(true);
 
     monthlyBudget = Math.floor(parseInt(salary)/12*.1);
     setValueEntered(true);
@@ -24,6 +24,7 @@ const InputBox = () => {
   }
   
   return (
+    <>
     <div className="inputBoxContainer">
       <form onSubmit={handleSubmit}>
         <label>
@@ -39,6 +40,10 @@ const InputBox = () => {
         <AffordAbleAmount IsValueEntered={ValueEntered} MonthlyPayment={MonthlyPayment}/>
       </form>
     </div>
+      {ValueEntered && <section>
+        <label>Testing</label>
+      </section>}
+    </>
   )
 }
 

@@ -41,11 +41,11 @@ const InputBox = () => {
         <AffordAbleAmount IsValueEntered={ValueEntered} MonthlyPayment={MonthlyPayment}/>
       </form>
     </div>
-      {MonthlyPayment > 172 && <section>
+      {/*{MonthlyPayment > 172 && <section>
         <label>Testing</label>
         <select>
         </select>
-      </section>}
+      </section>}*/}
     </>
   )
 }

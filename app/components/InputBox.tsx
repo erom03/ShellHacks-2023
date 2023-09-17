@@ -19,8 +19,8 @@ const InputBox = () => {
     setIsPending(true);
 
     monthlyBudget = Math.floor(parseInt(salary)/12*.1);
-    setValueEntered(true);
     SetMonthlyPayment(monthlyBudget);
+    setValueEntered(true);
     setIsPending(false);
   }
   
